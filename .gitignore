@@ -1,0 +1,23 @@
+# Node modules
+node_modules/
+
+# VSCode configurations
+.vscode/
+
+# Logs
+*.log
+
+# Temp files
+*.tmp
+
+# Python cache files
+__pycache__/
+
+# Virtual environment
+venv/
+
+# Serialized Python objects
+*.pkl
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
