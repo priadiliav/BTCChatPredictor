@@ -1,0 +1,14 @@
+<div class="bg-main flex items-center justify-center min-h-screen slide-in">
+  <div class="m-4 w-[calc(100vw-2.50rem)] h-[calc(100vh-2.50rem)] rounded-[30px] bg-white p-9">
+    <app-header></app-header>
+    <main class="mt-5 flex justify-center">
+      <div class="scroll-container min-w-2xl max-w-2xl" appAutoScroll>
+        <div *ngFor="let message of messages">
+            <app-customers-message [messageId]="message.id"></app-customers-message>
+            <app-bots-message [responseId]="message.id"></app-bots-message>
+        </div>
+        <div *ngFor="let i of [1]" class="bg-white w-full max-w-3xl p-8"></div>
+      </div>
+    </main>
+    <app-footer></app-footer>
+</div>

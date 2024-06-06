@@ -1,0 +1,13 @@
+<form [formGroup]="messageForm" (ngSubmit)="handleSubmitForm()">
+    <div class="flex justify-center">
+            <div class="bg-white w-full max-w-2xl rounded-2xl flex items-center space-x-3">
+                <input formControlName="message" type="text" placeholder="Write your answer" class="flex-grow bg-gray-100 p-4 rounded-2xl outline-none">
+                <button type="submit" class="bg-gradient-to-r from-blue-400 to-green-300 hover:bg-gradient-to-l text-white py-4 px-5 rounded-2xl">
+                    <svg *ngIf="!isLoading" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 12H22M22 12L12 2M22 12L12 22" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <app-loader *ngIf="isLoading" [size]="17"></app-loader>
+                </button>
+            </div>
+    </div>
+</form>

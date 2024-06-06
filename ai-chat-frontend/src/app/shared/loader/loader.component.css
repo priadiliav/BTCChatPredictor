@@ -1,0 +1,25 @@
+.loader svg {
+  width: 100%;
+  height: 100%;
+}
+
+.loader .ring {
+  fill: none;
+  stroke: #ddd;
+  stroke-width: 4;
+}
+
+.loader .ball {
+  stroke: none;
+  transform-origin: center;
+  animation: orbit 1s linear infinite;
+}
+
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
